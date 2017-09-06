@@ -25209,56 +25209,86 @@ ion-navbar.toolbar {
 }
 
 .segment-tab {
-  line-height: 0.5rem;
+  line-height: 1.5rem;
   padding-top: 5px;
+  color: rgba(0, 0, 0, 0.5) !important;
+  text-transform: none;
 }
 
 .segment-button-tab {
-  height: 50px !important;
+  height: 75px !important;
 }
 
-.segment-button.segment-activated {
-  background-color: #00c1a9 !important;
-  color: #fff !important;
+.segment-button-tab.segment-activated {
+  border-color: #00c1a9 !important;
 }
 
-.segment-button {
-  color: #c8c7cc !important;
-  border-color: #c8c7cc !important;
-}
-
-/*
-Temp
- */
-.custom-icon {
-  background: #666;
-  background: rgba(0, 0, 0, 0.4);
+.segment-tab-icon {
+  background: #dedede;
   border-radius: 100%;
-  border: 6px solid #fff;
-  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
+  border: 0px solid #fff;
   color: #fff;
-  display: table-cell;
-  font-size: 45px;
-  height: 60px;
-  padding: 30px;
+  display: block;
+  height: 40px;
+  padding: 7px;
   text-align: center;
   -webkit-transition: .5s;
   transition: .5s;
   vertical-align: middle;
-  width: 60px;
+  width: 40px;
+  line-height: 2.5rem !important;
+  margin: auto;
+  font-size: 2.5rem;
 }
 
-.custom-icon:hover {
-  background: rgba(0, 0, 0, 0.6);
+.segment-activated > div > .segment-tab-icon {
+  background: #00c1a9;
 }
 
-.fix-editor {
-  display: none;
+.voj-modal {
+  background: rgba(0, 0, 0, 0.7);
 }
 
-.icon-wrapper {
-  display: inline-block;
+.voj-modal .modal-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  min-width: 300px;
+  position: absolute;
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .voj-modal .modal-wrapper {
+    width: 300px;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+.desktop-header {
+  background-color: #55b7a6;
+}
+
+.voj-tabs ion-toolbar {
+  padding: 0;
+}
+
+.voj-tabs ion-toolbar ion-segment-button {
+  border-bottom: none !important;
+  height: 62px !important;
+}
+
+.voj-tabs ion-toolbar ion-segment-button .segment-tab {
+  padding-top: 3px;
+}
+
+ion-content {
+  height: calc(100% - 62px);
 }
 
 desktop-calendar .desktop-calendar-container {
@@ -25763,6 +25793,12 @@ voj-form .list-md .item-block .item-inner, voj-form .list-md .item-input:last-ch
   border: none;
 }
 
+voj-form .custom-input {
+  border-bottom: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
 voj-form .custom-input.item-input.ng-valid.input-has-value:not(.input-has-focus) .item-inner, voj-form .custom-input.item-input.input-has-focus .item-inner {
   border: none;
   -webkit-box-shadow: none;
@@ -25782,6 +25818,12 @@ voj-form .custom-input.item-input.ng-valid.input-has-value:not(.input-has-focus)
 voj-form .custom-input ion-input input {
   border: 1px solid #c3c3c3;
   padding: 1px 4px;
+}
+
+voj-form .custom-input .item-inner {
+  border-bottom: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 voj-form ion-list .input-autocomplete ion-list {
@@ -25889,6 +25931,48 @@ voj-form ion-list.custom-radio {
 		}*/
 }
 
+voj-form ion-list.custom-radio .voj-radio-label {
+  border-top: none;
+  margin: 25px 0 10px 0;
+  min-height: 20px;
+}
+
+voj-form ion-list.custom-radio .voj-radio-button {
+  margin-left: 20px;
+  position: relative;
+  width: calc(100% - 40px);
+}
+
+voj-form ion-list.custom-radio .voj-radio-button ion-label {
+  margin-left: 10px;
+}
+
+voj-form ion-list.custom-radio .voj-radio-button ion-radio {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 100%;
+}
+
+voj-form ion-list.custom-radio.list-ios {
+  border-top: 0.55px solid #c8c7cc;
+  border-bottom: 0.55px solid #c8c7cc;
+}
+
+voj-form ion-list.custom-radio.list-ios .list-header-ios {
+  border-bottom: none;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+voj-form ion-list.custom-radio.list-ios .item-ios {
+  border-bottom: none !important;
+}
+
+voj-form ion-list.custom-radio.list-ios .item-ios .item-inner {
+  border-bottom: none;
+}
+
 voj-form ion-list.custom-radio + .list-md {
   margin-bottom: 0px;
 }
@@ -25919,7 +26003,7 @@ voj-form div.custom-select-container ion-list.custom-select-btn .custom-layer {
 }
 
 voj-form div.custom-select-container button.custom-select-btn-inner {
-  margin: 7% 0 0;
+  margin: 0 0 5px 0;
   height: 2.4rem;
   background-color: #14baa6;
 }
@@ -25959,6 +26043,72 @@ voj-form div.custom-select-btn-attachment button.custom-select-btn-attachment-in
   font-size: x-large;
 }
 
+voj-form .voj-validation-error-msg {
+  margin-bottom: 8px;
+}
+
+voj-form .voj-validation-error-msg p {
+  color: #e15e7c;
+  text-align: left;
+  margin: 0 20px;
+}
+
+voj-form .custom-checkbox-checked {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+voj-form .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+voj-form .text-upload-field {
+  border: 1px solid #cccccc;
+  height: 35px;
+  padding: 5px;
+  font-size: 20px;
+  color: #999999;
+  text-align: left;
+}
+
+voj-form .custom-upload-button {
+  background-color: #14baa6;
+}
+
+voj-form .uploaded-items {
+  margin-bottom: 10px;
+}
+
+voj-form .uploaded-item {
+  color: #999999;
+}
+
+voj-form .delete-uploaded-item-btn {
+  margin: 1px 0px;
+  height: 2.4rem;
+  background-color: #f2674e;
+}
+
+voj-form .delete-uploaded-item-btn ion-icon:before {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+voj-form .download-uploaded-item-btn {
+  margin: 1px 0px;
+  height: 2.4rem;
+  color: #999999;
+}
+
+voj-form .download-uploaded-item-btn ion-icon:before {
+  font-weight: bold;
+  font-size: x-large;
+}
+
 voj-header .generic {
   height: 180px;
 }
@@ -25976,6 +26126,58 @@ voj-header span.voj-style {
 voj-header ion-segment-button.voj-style {
   display: grid;
   height: auto !important;
+}
+
+voj-header-segment ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+voj-header-segment li {
+  width: 50%;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  background: #fff;
+  -webkit-box-shadow: inset 0px -2px 4px -1px #bab4ba;
+  box-shadow: inset 0px -2px 4px -1px #bab4ba;
+  /*border-top: 1px solid black;*/
+  /*border-right: 1px solid black;*/
+  margin-bottom: 0px;
+  position: relative;
+  z-index: 200;
+}
+
+voj-header-segment .leftB {
+  border-left: 3px solid #ffff;
+}
+
+voj-header-segment li:hover {
+  /*box-shadow: none;*/
+}
+
+voj-header-segment .active {
+  color: #555;
+  background: #fff;
+  margin-bottom: 0px;
+  margin-top: -5px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  position: relative;
+  z-index: 220;
+  /*border-bottom: 1px solid #fff;*/
+}
+
+voj-header-segment .contentList {
+  background-color: white;
+  position: relative;
+  z-index: 20;
+  /*border: 1px solid black;*/
 }
 
 voj-header-web .voj-web-header {
@@ -26052,7 +26254,7 @@ voj-notification {
 }
 
 voj-notification h1.voj-notification-title {
-  margin: 0;
+  margin: 0 0 13px 0;
   font-size: 24px;
   height: 30px;
   overflow: hidden;
@@ -26066,7 +26268,7 @@ voj-notification .voj-notification-message {
 
 voj-notification .voj-notification-message p {
   font-size: 18px;
-  margin: 13px 0;
+  margin: 0 0 13px 0;
 }
 
 voj-notification .voj-notification-buttons {
@@ -26081,6 +26283,42 @@ voj-notification .voj-notification-buttons {
 voj-notification .voj-notification-buttons button {
   font-weight: bold;
   font-size: 14px;
+}
+
+voj-notification .voj-notification-buttons #sendAgainBtn {
+  color: #6e6e6e;
+  font-size: 11px;
+  border-bottom: 1px solid #6e6e6e;
+  border-radius: 0;
+  padding: 0;
+  height: 15px;
+  display: block;
+  margin: 0 auto 10px;
+  text-transform: none;
+}
+
+voj-notification .voj-notification-buttons #connectBtn {
+  background-color: #14baa6;
+  text-transform: capitalize;
+  color: #fff;
+  border-color: #14baa6;
+  border-radius: 4%;
+  padding: 0 10%;
+  display: block;
+  margin: 0 auto 10px;
+  height: 25px;
+}
+
+voj-notification .voj-notification-buttons #smsBtn, voj-notification .voj-notification-buttons #mailBtn {
+  background-color: #14baa6;
+  text-transform: none;
+  color: #fff;
+  border-color: #14baa6;
+  border-radius: 4%;
+  padding: 0;
+  margin: 0 10px 25px;
+  width: 43%;
+  height: 25px;
 }
 
 voj-page-header ion-navbar.toolbar {
@@ -26171,6 +26409,38 @@ voj-page-header ion-navbar.toolbar.mobile-header .toolbar-content-ios > span but
 voj-page-header ion-navbar.toolbar-ios .toolbar-content-md > span button.fab[mini],
 voj-page-header ion-navbar.toolbar-ios .toolbar-content-ios > span button.fab[mini] {
   margin-left: 3px;
+}
+
+voj-page-header ion-navbar.toolbar.mobile-header .toolbar-content {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+voj-page-header .back-button {
+  color: #ffffff;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ion-app.platform-ios voj-page-header .back-button {
+  margin-top: 10px;
+}
+
+ion-app.platform-ios voj-page-header ion-navbar.toolbar .toolbar-content {
+  padding: 15px 8px 5px 8px;
+}
+
+ion-app.platform-ios voj-page-header ion-navbar.toolbar .toolbar-content .voj-page-header-buttons {
+  top: 10px;
+}
+
+.ios voj-search-header ion-navbar.toolbar.mobile-header .toolbar-background-md,
+.ios voj-search-header .toolbar-background-ios, .md voj-search-header ion-navbar.toolbar.mobile-header .toolbar-background-md,
+.md voj-search-header .toolbar-background-ios {
+  background-color: #4c545d;
 }
 
 .ios voj-search-header ion-header, .md voj-search-header ion-header {
@@ -26352,6 +26622,110 @@ page-about voj-map #map {
   position: inherit !important;
 }
 
+account-page {
+  background-color: #55b7a6;
+}
+
+availabilities-page .availabilities-container {
+  padding: 15px;
+  background-color: #14baa6;
+  height: 100%;
+}
+
+availabilities-page .availabilities-child-container {
+  background-color: white !important;
+}
+
+availabilities-page .availabilities-link {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 20px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+availabilities-page .empty-field1 {
+  height: 100px;
+}
+
+availabilities-page .empty-field2 {
+  height: 80px;
+}
+
+availabilities-page .custom-line {
+  height: 5px;
+  display: inline-block;
+  margin-left: calc(50% - 75px);
+  border-radius: 1px;
+  background-color: #55b7a6;
+  width: 150px;
+}
+
+availabilities-page .availability-list .item-inner {
+  border-bottom: none !important;
+}
+
+availabilities-page .availability-list .availability-delete-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #e26f57;
+}
+
+availabilities-page .availability-list .availability-delete-btn:hover {
+  background-color: #e26f57;
+}
+
+availabilities-page .availability-list .availability-label {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+availabilities-page .availabilities-validate-button {
+  text-align: center;
+}
+
+availabilities-page .availabilities-validate-button .validate-btn {
+  background-color: #55b7a6;
+}
+
+availabilities-page .availabilities-validate-button .validate-btn:hover {
+  background-color: #55b7a6;
+}
+
+availabilities-add-days-page .availabilities-add-days-container {
+  padding: 15px;
+  background-color: #14baa6;
+  height: 100%;
+}
+
+availabilities-add-days-page .availabilities-add-days-child-container {
+  background-color: white !important;
+}
+
+bank-settings-page .bank-settings-container {
+  padding: 15px;
+  background-color: #14baa6;
+  height: 100%;
+}
+
+bank-settings-page .bank-settings-child-container {
+  background-color: white !important;
+}
+
+company-page {
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+company-page .voj-content {
+  overflow-y: auto;
+}
+
+company-page .voj-content .voj-form-container {
+  background-color: #ffffff;
+  padding: 0 0 20px 0;
+}
+
 page-details ion-header {
   background-color: #00c1a9 !important;
 }
@@ -26360,10 +26734,396 @@ page-details ion-content {
   background-color: #00c1a9 !important;
 }
 
+page-enterprise-details .enterprise-details-container {
+  padding: 15px;
+  background-color: #14baa6;
+  height: 100%;
+}
+
+page-enterprise-details .enterprise-details-child-container {
+  background-color: white !important;
+}
+
+enterprise-search-page .enterprise-search-parent {
+  height: calc(100% - 230px);
+  overflow-y: auto;
+}
+
+enterprise-search-page .enterprise-search-child {
+  margin-bottom: 56px;
+  position: relative;
+}
+
+enterprise-search-page .enterprise-search-container {
+  background-color: #14baa6;
+  padding: 20px;
+  height: calc(100vh - 62px);
+  overflow-y: auto;
+}
+
+enterprise-search-page .enterprise-search-child-container {
+  background-color: white !important;
+  margin-bottom: 56px;
+  position: relative;
+  min-height: 200px;
+}
+
+enterprise-search-page ion-searchbar {
+  margin-top: 50px;
+}
+
+enterprise-search-page .select-button {
+  height: 30px;
+  font-size: 16px;
+  background-color: #14baa6;
+  color: #ffffff;
+}
+
 page-home voj-map #map {
   height: 400px;
   width: calc(100% - 20px);
   margin: 0 10px;
+}
+
+identity-page {
+  background-color: #ffffff;
+}
+
+identity-page .voj-content {
+  overflow-y: auto;
+}
+
+identity-page .voj-content .voj-form-container {
+  background-color: #ffffff;
+  padding: 0 0 20px 0;
+}
+
+jobs-list-page .jobs-list-container {
+  padding: 15px;
+  background-color: #14baa6;
+  height: 100%;
+}
+
+jobs-list-page .jobs-list-child-container {
+  padding: 5px;
+  background-color: white !important;
+}
+
+jobyer-availability-choice-page {
+  background-color: #55b7a6;
+}
+
+jobyer-availability-choice-page .voj-card-header {
+  text-align: center;
+  font-size: 18px;
+}
+
+jobyer-availability-choice-page .voj-card-buttons {
+  width: 150px;
+  margin: 0 auto;
+}
+
+jobyer-availability-choice-page .voj-card-buttons button {
+  margin-top: 30px;
+  background-color: #55b7a6;
+}
+
+jobyer-availability-choice-page .voj-card-buttons button:hover {
+  background-color: #55b7a6;
+}
+
+languages-page .languages-container {
+  padding: 15px;
+  background-color: #14baa6;
+  height: 100%;
+}
+
+languages-page .languages-child-container {
+  padding: 5px;
+  background-color: white !important;
+  position: relative;
+  min-height: calc(100vh - 150px);
+}
+
+languages-page .custom-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -64px;
+}
+
+login-page {
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+login-page .voj-content {
+  overflow-y: auto;
+}
+
+login-page .voj-content .voj-form-container {
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+login-page .voj-content .voj-form-container #phone-code-field, login-page .voj-content .voj-form-container #phone-field {
+  display: inline-block;
+  width: 50%;
+}
+
+login-page .voj-content .voj-form-container #password-field ion-list {
+  margin-bottom: 0;
+}
+
+login-page .voj-content .voj-form-container #forgotten-password-btn {
+  text-align: right;
+  margin: 0 15px;
+}
+
+login-page .voj-content .voj-form-container #forgotten-password-btn button {
+  background: none;
+  color: #6e6e6e;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 1px solid #6e6e6e;
+  border-radius: 0;
+  padding: 0;
+  height: 25px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+login-page .voj-content .voj-form-container .custom-btn {
+  background-color: #14baa6;
+  text-transform: capitalize;
+  color: #fff;
+  border-color: #14baa6;
+  border-radius: 4%;
+  padding: 0 10%;
+}
+
+login-page .voj-content .voj-form-container .voj-not-registered-title {
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 70px;
+}
+
+main-address-page {
+  background-color: #ffffff;
+}
+
+main-address-page .voj-content {
+  overflow-y: auto;
+  height: calc(100vh - 139px);
+}
+
+main-address-page .voj-content .voj-form-container {
+  background-color: #ffffff;
+  padding: 0 0 20px 0;
+}
+
+main-address-page .voj-content .voj-form-container #add-address-btn button {
+  background: none;
+  color: #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 1px solid #000000;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  height: 25px;
+}
+
+my-cv-page .my-cv-parent {
+  height: calc(100% - 170px);
+  overflow-y: auto;
+}
+
+my-cv-page .my-cv-child {
+  margin-bottom: 56px;
+  position: relative;
+  padding-bottom: 50px;
+  min-height: 70%;
+}
+
+my-cv-page .my-cv-container {
+  background-color: #14baa6;
+  padding: 20px;
+  height: calc(100vh - 62px);
+  overflow-y: auto;
+}
+
+my-cv-page .my-cv-child-container {
+  background-color: white !important;
+  margin-bottom: 56px;
+  position: relative;
+  min-height: 90%;
+  padding-bottom: 50px;
+}
+
+my-cv-page .custom-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -18%;
+}
+
+options-page {
+  background-color: #55b7a6;
+}
+
+options-page .voj-card-buttons button {
+  margin-top: 15px;
+  background-color: #55b7a6;
+  white-space: pre-wrap;
+}
+
+options-page .voj-card-buttons button:first-child {
+  margin-top: 0;
+}
+
+options-page .voj-card-buttons button:hover {
+  background-color: #55b7a6 !important;
+}
+
+personal-details-page {
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+personal-details-page .personal-details-container {
+  padding: 15px;
+  background-color: #14baa6;
+  height: 100%;
+}
+
+personal-details-page .personal-details-child-container {
+  background-color: white !important;
+}
+
+personal-details-page .voj-content {
+  overflow-y: auto;
+}
+
+personal-details-page .voj-content .voj-form-container {
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+page-personal-details-identity .personal-details-container {
+  padding: 15px;
+  background-color: #14baa6;
+  overflow-y: auto;
+  height: calc(100vh - 139px);
+}
+
+page-personal-details-identity .personal-details-child-container {
+  background-color: white !important;
+}
+
+qualities-page .qualities-container {
+  padding: 15px;
+  background-color: #14baa6;
+  height: 100%;
+}
+
+qualities-page .qualities-child-container {
+  padding: 5px;
+  background-color: white !important;
+  position: relative;
+  min-height: calc(100vh - 150px);
+}
+
+qualities-page .custom-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -64px;
+}
+
+reset-password-page {
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+reset-password-page .voj-content {
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+
+reset-password-page .voj-content .voj-form-container {
+  background-color: #ffffff;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+reset-password-page .voj-content .voj-form-container h2 {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+reset-password-page .voj-content .voj-form-container #user-phone ion-list {
+  margin-bottom: 0;
+}
+
+reset-password-page .voj-content .voj-form-container #user-mail ion-list {
+  margin-bottom: 0;
+}
+
+reset-password-page .voj-content .voj-form-container #phone-code-select {
+  width: 55%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+reset-password-page .voj-content .voj-form-container #phone-code-select ion-item {
+  padding-left: 0;
+}
+
+reset-password-page .voj-content .voj-form-container #phone-select {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 11px;
+}
+
+reset-password-page .voj-content .voj-form-container #phone-select ion-list {
+  margin-bottom: 0;
+}
+
+reset-password-page .voj-content .voj-form-container #phone-select ion-item {
+  padding-left: 0;
+}
+
+reset-password-page .voj-content .voj-form-container #phone-select ion-item .item-inner {
+  padding-right: 0;
+}
+
+reset-password-page .voj-content .voj-form-container #phone-select ion-item input {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+reset-password-page .voj-content .voj-form-container .custom-btn {
+  margin-bottom: 0;
+}
+
+reset-password-page .voj-content .voj-form-container #radio-submit {
+  display: none;
+}
+
+reset-password-page .voj-content .voj-form-container .voj-validation-error-msg {
+  margin-bottom: 8px;
+}
+
+reset-password-page .voj-content .voj-form-container .voj-validation-error-msg p {
+  color: #e15e7c;
+  text-align: left;
+  margin: 0;
 }
 
 page-search .search-page-content {
@@ -26372,4 +27132,76 @@ page-search .search-page-content {
 
 page-search .search-page-content .scroll-content {
   padding: 0px !important;
+}
+
+page-search ion-segment-button {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+sign-up-page {
+  background-color: #ffffff;
+  overflow-y: auto;
+  border-radius: 2px;
+}
+
+sign-up-page .voj-content {
+  overflow-y: auto;
+}
+
+sign-up-page .voj-content .voj-form-container {
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+sign-up-page .list-ios {
+  margin: 0;
+}
+
+sign-up-page .list-md {
+  margin: 0;
+}
+
+sign-up-page .connector {
+  margin-top: 40px;
+}
+
+sign-up-page .custom-btn {
+  background-color: #14baa6;
+  color: #fff;
+  border-color: #14baa6;
+}
+
+sign-up-page .sign-up-container {
+  height: 100%;
+  padding: 15px;
+  background-color: #14baa6;
+}
+
+sign-up-page .sign-up-child-container {
+  background-color: white !important;
+}
+
+user-information-page {
+  background-color: #55b7a6;
+}
+
+user-information-page .voj-user-info-list .item-inner {
+  border-bottom: none !important;
+}
+
+user-information-page .voj-user-info-list .voj-user-info-edit-btn {
+  width: 35px;
+  height: 30px;
+  background-color: #55b7a6;
+}
+
+user-information-page .voj-user-info-list .voj-user-info-edit-btn:hover {
+  background-color: #55b7a6;
+}
+
+user-information-page .voj-user-info-list .voj-user-info-item-label {
+  margin: 0;
+  white-space: pre-wrap;
 }
