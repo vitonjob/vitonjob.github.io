@@ -4,10 +4,10 @@
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
-    "src": "assets/img/vitonjob.png",
-    "sizes": "166x66",
+    "src": "assets/imgs/logo.png",
+    "sizes": "512x512",
     "type": "image/png"
   }],
-  "background_color": "#fff",
-  "theme_color": "#fff"
+  "background_color": "#4e8ef7",
+  "theme_color": "#4e8ef7"
 }
