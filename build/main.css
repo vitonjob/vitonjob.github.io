@@ -25291,6 +25291,47 @@ ion-content {
   height: calc(100% - 62px);
 }
 
+.fab-notification {
+  margin-top: -17px;
+  margin-left: 5px;
+}
+
+.fab-notification button {
+  border-color: #e93a3a !important;
+  background-color: #e93a3a !important;
+  width: 30px;
+  height: 30px;
+}
+
+.fab-notification button:hover {
+  border-color: #e93a3a !important;
+  background-color: #e93a3a !important;
+  width: 30px;
+  height: 30px;
+}
+
+ion-label {
+  font-size: 14px !important;
+  margin-bottom: 5px !important;
+}
+
+input {
+  margin-top: 0 !important;
+}
+
+button.button.custom-btn {
+  text-transform: lowercase !important;
+}
+
+button.button.custom-btn span.button-inner {
+  display: inline-block !important;
+  padding-top: 10px !important;
+}
+
+button.button.custom-btn span.button-inner:first-letter {
+  text-transform: capitalize !important;
+}
+
 desktop-calendar .desktop-calendar-container {
   width: 100%;
   padding: 4%;
@@ -25605,6 +25646,10 @@ voj-card button.menu-button span {
 voj-card button.menu-button ion-icon {
   text-align: center;
   width: 15px;
+}
+
+voj-card .reduced-badge-style {
+  top: 50%;
 }
 
 voj-card div.badges-container {
@@ -25977,6 +26022,49 @@ voj-form ion-list.custom-radio + .list-md {
   margin-bottom: 0px;
 }
 
+voj-form ion-list.custom-radio-with-inputs {
+  padding: 10px;
+}
+
+voj-form ion-list.custom-radio-with-inputs .custom-radio-wrap {
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+voj-form ion-list.custom-radio-with-inputs .custom-radio-icon {
+  padding-top: 10px;
+}
+
+voj-form ion-list.custom-radio-with-inputs .custom-radio-label-1 {
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+voj-form ion-list.custom-radio-with-inputs .radio-field-wrap {
+  margin-top: 10px;
+}
+
+voj-form ion-list.custom-radio-with-inputs .custom-radio-label-2 {
+  width: 60px;
+  padding-left: 5px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+voj-form ion-list.custom-radio-with-inputs .custom-radio-input {
+  border: 1px solid #cccccc;
+  width: 70px;
+  padding: 2px;
+  text-align: center;
+}
+
+voj-form ion-list.custom-radio-with-inputs .selectedItem {
+  opacity: 0.4;
+}
+
 voj-form div.custom-select-container {
   margin-bottom: 5%;
 }
@@ -26228,6 +26316,25 @@ voj-header-web .toolbar-background {
   background-color: #4b545e;
 }
 
+voj-header-web .fab-notification {
+  margin-top: -12px;
+  margin-left: -12px;
+}
+
+voj-header-web .fab-notification button {
+  border-color: #e93a3a !important;
+  background-color: #e93a3a !important;
+  width: 30px;
+  height: 30px;
+}
+
+voj-header-web .fab-notification button:hover {
+  border-color: #e93a3a !important;
+  background-color: #e93a3a !important;
+  width: 30px;
+  height: 30px;
+}
+
 voj-map #map {
   min-height: 250px;
 }
@@ -26319,6 +26426,10 @@ voj-notification .voj-notification-buttons #smsBtn, voj-notification .voj-notifi
   margin: 0 10px 25px;
   width: 43%;
   height: 25px;
+}
+
+voj-page-header .bar-button::after {
+  z-index: 1;
 }
 
 voj-page-header ion-navbar.toolbar {
@@ -26610,106 +26721,49 @@ voj-segment .voj-segments-container .voj-segment .voj-segment-subtitle-web {
   font-size: 16px;
 }
 
-page-about ion-header {
-  background-color: #00c1a9 !important;
-}
-
-page-about ion-content {
-  background-color: #00c1a9 !important;
-}
-
-page-about voj-map #map {
-  position: inherit !important;
-}
-
 account-page {
   background-color: #55b7a6;
 }
 
-availabilities-page .availabilities-container {
-  padding: 15px;
-  background-color: #14baa6;
-  height: 100%;
+bank-settings-page {
+  background-color: #ffffff;
+  overflow-y: auto;
 }
 
-availabilities-page .availabilities-child-container {
-  background-color: white !important;
+bank-settings-page .voj-content {
+  overflow-y: auto;
 }
 
-availabilities-page .availabilities-link {
-  text-align: center;
-  font-size: 18px;
-  padding-top: 20px;
-  color: #000000;
-  text-decoration: underline;
-}
-
-availabilities-page .empty-field1 {
-  height: 100px;
-}
-
-availabilities-page .empty-field2 {
-  height: 80px;
-}
-
-availabilities-page .custom-line {
-  height: 5px;
-  display: inline-block;
-  margin-left: calc(50% - 75px);
-  border-radius: 1px;
-  background-color: #55b7a6;
-  width: 150px;
-}
-
-availabilities-page .availability-list .item-inner {
-  border-bottom: none !important;
-}
-
-availabilities-page .availability-list .availability-delete-btn {
-  width: 40px;
-  height: 40px;
-  background-color: #e26f57;
-}
-
-availabilities-page .availability-list .availability-delete-btn:hover {
-  background-color: #e26f57;
-}
-
-availabilities-page .availability-list .availability-label {
-  margin: 0;
-  white-space: pre-wrap;
-}
-
-availabilities-page .availabilities-validate-button {
+bank-settings-page .voj-content .voj-form-container {
+  background-color: #ffffff;
+  padding: 20px 0;
   text-align: center;
 }
 
-availabilities-page .availabilities-validate-button .validate-btn {
-  background-color: #55b7a6;
+bank-settings-page .bank-settings-parent {
+  height: calc(100% - 190px);
+  overflow-y: auto;
 }
 
-availabilities-page .availabilities-validate-button .validate-btn:hover {
-  background-color: #55b7a6;
-}
-
-availabilities-add-days-page .availabilities-add-days-container {
-  padding: 15px;
-  background-color: #14baa6;
-  height: 100%;
-}
-
-availabilities-add-days-page .availabilities-add-days-child-container {
-  background-color: white !important;
+bank-settings-page .bank-settings-child {
+  margin-bottom: 56px;
+  position: relative;
 }
 
 bank-settings-page .bank-settings-container {
   padding: 15px;
   background-color: #14baa6;
-  height: 100%;
+  height: calc(100vh - 62px);
+  overflow-y: auto;
 }
 
 bank-settings-page .bank-settings-child-container {
   background-color: white !important;
+  position: relative;
+}
+
+bank-settings-page .custom-btn {
+  margin-bottom: 10px;
 }
 
 company-page {
@@ -26724,14 +26778,6 @@ company-page .voj-content {
 company-page .voj-content .voj-form-container {
   background-color: #ffffff;
   padding: 0 0 20px 0;
-}
-
-page-details ion-header {
-  background-color: #00c1a9 !important;
-}
-
-page-details ion-content {
-  background-color: #00c1a9 !important;
 }
 
 page-enterprise-details .enterprise-details-container {
@@ -26779,13 +26825,8 @@ enterprise-search-page .select-button {
   color: #ffffff;
 }
 
-page-home voj-map #map {
-  height: 400px;
-  width: calc(100% - 20px);
-  margin: 0 10px;
-}
-
 identity-page {
+  overflow-y: auto;
   background-color: #ffffff;
 }
 
@@ -26795,7 +26836,25 @@ identity-page .voj-content {
 
 identity-page .voj-content .voj-form-container {
   background-color: #ffffff;
-  padding: 0 0 20px 0;
+  padding: 0 0 10px 0;
+}
+
+identity-page .identity-container {
+  height: calc(100% - 120px);
+}
+
+identity-page #civility .label.label-md {
+  text-align: left;
+}
+
+identity-page #civility ion-list.custom-radio .voj-radio-button {
+  left: 115px;
+  top: -55px;
+}
+
+identity-page #civility .custom-radio.list.list-md {
+  width: 150px;
+  height: 75px;
 }
 
 jobs-list-page .jobs-list-container {
@@ -26809,47 +26868,14 @@ jobs-list-page .jobs-list-child-container {
   background-color: white !important;
 }
 
-jobyer-availability-choice-page {
-  background-color: #55b7a6;
+jobs-list-page .item-label-stacked .text-input-md {
+  border: 2px solid #cccccc;
+  padding: 2px;
 }
 
-jobyer-availability-choice-page .voj-card-header {
-  text-align: center;
-  font-size: 18px;
-}
-
-jobyer-availability-choice-page .voj-card-buttons {
-  width: 150px;
-  margin: 0 auto;
-}
-
-jobyer-availability-choice-page .voj-card-buttons button {
-  margin-top: 30px;
-  background-color: #55b7a6;
-}
-
-jobyer-availability-choice-page .voj-card-buttons button:hover {
-  background-color: #55b7a6;
-}
-
-languages-page .languages-container {
-  padding: 15px;
-  background-color: #14baa6;
-  height: 100%;
-}
-
-languages-page .languages-child-container {
-  padding: 5px;
-  background-color: white !important;
-  position: relative;
-  min-height: calc(100vh - 150px);
-}
-
-languages-page .custom-btn {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  margin-left: -64px;
+jobs-list-page .item-label-stacked .jobs-list-label {
+  font-size: 16px;
+  color: #000000;
 }
 
 login-page {
@@ -26865,11 +26891,6 @@ login-page .voj-content .voj-form-container {
   background-color: #ffffff;
   padding: 20px 0;
   text-align: center;
-}
-
-login-page .voj-content .voj-form-container #phone-code-field, login-page .voj-content .voj-form-container #phone-field {
-  display: inline-block;
-  width: 50%;
 }
 
 login-page .voj-content .voj-form-container #password-field ion-list {
@@ -26911,16 +26932,20 @@ login-page .voj-content .voj-form-container .voj-not-registered-title {
 
 main-address-page {
   background-color: #ffffff;
+  overflow-y: auto;
+}
+
+main-address-page .main-address-container {
+  height: calc(100% - 120px);
 }
 
 main-address-page .voj-content {
   overflow-y: auto;
-  height: calc(100vh - 139px);
 }
 
 main-address-page .voj-content .voj-form-container {
   background-color: #ffffff;
-  padding: 0 0 20px 0;
+  padding: 0 0 10px 0;
 }
 
 main-address-page .voj-content .voj-form-container #add-address-btn button {
@@ -26969,6 +26994,16 @@ my-cv-page .custom-btn {
   margin-left: -18%;
 }
 
+page-open-application .container {
+  padding: 15px;
+  background-color: #14baa6;
+  height: 100%;
+}
+
+page-open-application .child-container {
+  background-color: white !important;
+}
+
 options-page {
   background-color: #55b7a6;
 }
@@ -26993,13 +27028,8 @@ personal-details-page {
 }
 
 personal-details-page .personal-details-container {
-  padding: 15px;
-  background-color: #14baa6;
-  height: 100%;
-}
-
-personal-details-page .personal-details-child-container {
-  background-color: white !important;
+  overflow-y: auto;
+  height: calc(100% - 120px);
 }
 
 personal-details-page .voj-content {
@@ -27010,6 +27040,36 @@ personal-details-page .voj-content .voj-form-container {
   background-color: #ffffff;
   padding: 20px 0;
   text-align: center;
+}
+
+personal-details-page #date-of-birth ion-list {
+  margin-bottom: 0;
+}
+
+personal-details-page .voj-validation-error-msg {
+  margin: 0 17px 8px 17px;
+}
+
+personal-details-page .voj-validation-error-msg p {
+  color: #e15e7c;
+  text-align: left;
+  margin: 0;
+}
+
+personal-details-page .voj-warning-msg {
+  margin: 0 17px 8px 17px;
+}
+
+personal-details-page .voj-warning-msg p {
+  color: #cccccc;
+  font-size: 10px;
+  text-align: left;
+  margin: 0;
+}
+
+page-personal-details-identity {
+  background-color: #ffffff;
+  overflow-y: auto;
 }
 
 page-personal-details-identity .personal-details-container {
@@ -27023,24 +27083,14 @@ page-personal-details-identity .personal-details-child-container {
   background-color: white !important;
 }
 
-qualities-page .qualities-container {
-  padding: 15px;
-  background-color: #14baa6;
-  height: 100%;
+page-personal-details-identity .voj-content {
+  overflow-y: auto;
 }
 
-qualities-page .qualities-child-container {
-  padding: 5px;
-  background-color: white !important;
-  position: relative;
-  min-height: calc(100vh - 150px);
-}
-
-qualities-page .custom-btn {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  margin-left: -64px;
+page-personal-details-identity .voj-content .voj-form-container {
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
 }
 
 reset-password-page {
@@ -27126,19 +27176,6 @@ reset-password-page .voj-content .voj-form-container .voj-validation-error-msg p
   margin: 0;
 }
 
-page-search .search-page-content {
-  background-color: #00c1a9;
-}
-
-page-search .search-page-content .scroll-content {
-  padding: 0px !important;
-}
-
-page-search ion-segment-button {
-  color: #ffffff !important;
-  border-color: #ffffff !important;
-}
-
 sign-up-page {
   background-color: #ffffff;
   overflow-y: auto;
@@ -27153,6 +27190,10 @@ sign-up-page .voj-content .voj-form-container {
   background-color: #ffffff;
   padding: 20px 0;
   text-align: center;
+}
+
+sign-up-page .sign-up-container {
+  height: calc(100% - 120px);
 }
 
 sign-up-page .list-ios {
@@ -27171,16 +27212,6 @@ sign-up-page .custom-btn {
   background-color: #14baa6;
   color: #fff;
   border-color: #14baa6;
-}
-
-sign-up-page .sign-up-container {
-  height: 100%;
-  padding: 15px;
-  background-color: #14baa6;
-}
-
-sign-up-page .sign-up-child-container {
-  background-color: white !important;
 }
 
 user-information-page {
@@ -27204,4 +27235,330 @@ user-information-page .voj-user-info-list .voj-user-info-edit-btn:hover {
 user-information-page .voj-user-info-list .voj-user-info-item-label {
   margin: 0;
   white-space: pre-wrap;
+}
+
+availabilities-add-slot-page .availabilities-add-slot-parent {
+  height: calc(100% - 190px);
+  overflow-y: auto;
+}
+
+availabilities-add-slot-page .availabilities-add-slot-child {
+  margin-bottom: 56px;
+  position: relative;
+  min-height: 80%;
+}
+
+availabilities-add-slot-page .availabilities-add-slot-container {
+  padding: 15px;
+  background-color: #14baa6;
+  height: calc(100vh - 62px);
+  overflow-y: auto;
+}
+
+availabilities-add-slot-page .availabilities-add-slot-child-container {
+  padding: 5px;
+  background-color: white !important;
+  position: relative;
+  min-height: 90%;
+}
+
+availabilities-page .availabilities-parent {
+  height: calc(100% - 190px);
+  overflow-y: auto;
+}
+
+availabilities-page .availabilities-child {
+  margin-bottom: 56px;
+  position: relative;
+}
+
+availabilities-page .availabilities-container {
+  padding: 15px;
+  background-color: #14baa6;
+  height: calc(100vh - 62px);
+  overflow-y: auto;
+}
+
+availabilities-page .availabilities-child-container {
+  background-color: white !important;
+  position: relative;
+}
+
+availabilities-page .availabilities-link {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 20px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+availabilities-page .empty-field1 {
+  height: 100px;
+}
+
+availabilities-page .empty-field2 {
+  height: 80px;
+}
+
+availabilities-page .custom-line {
+  height: 5px;
+  display: inline-block;
+  margin-left: calc(50% - 75px);
+  border-radius: 1px;
+  background-color: #55b7a6;
+  width: 150px;
+}
+
+availabilities-page .availability-list .item-inner {
+  border-bottom: none !important;
+}
+
+availabilities-page .availability-list .availability-delete-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #e26f57;
+}
+
+availabilities-page .availability-list .availability-delete-btn:hover {
+  background-color: #e26f57;
+}
+
+availabilities-page .availability-list .availability-label {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+availabilities-page .availabilities-validate-button {
+  text-align: center;
+}
+
+availabilities-page .availabilities-validate-button .validate-btn {
+  background-color: #55b7a6;
+  margin-bottom: 10px;
+}
+
+availabilities-page .availabilities-validate-button .validate-btn:hover {
+  background-color: #55b7a6;
+}
+
+availabilities-add-days-page .availabilities-add-days-parent {
+  height: calc(100% - 190px);
+  overflow-y: auto;
+}
+
+availabilities-add-days-page .availabilities-add-days-child {
+  margin-bottom: 56px;
+  position: relative;
+}
+
+availabilities-add-days-page .availabilities-add-days-container {
+  padding: 15px;
+  background-color: #14baa6;
+  height: calc(100vh - 62px);
+  overflow-y: auto;
+}
+
+availabilities-add-days-page .availabilities-add-days-child-container {
+  background-color: white !important;
+  position: relative;
+}
+
+jobyer-availability-choice-page {
+  background-color: #55b7a6;
+}
+
+jobyer-availability-choice-page .voj-card-header {
+  text-align: center;
+  font-size: 18px;
+}
+
+jobyer-availability-choice-page .voj-card-buttons {
+  width: 150px;
+  margin: 0 auto;
+}
+
+jobyer-availability-choice-page .voj-card-buttons button {
+  margin-top: 30px;
+  background-color: #55b7a6;
+}
+
+jobyer-availability-choice-page .voj-card-buttons button:hover {
+  background-color: #55b7a6;
+}
+
+languages-page .languages-parent {
+  height: calc(100% - 190px);
+  overflow-y: auto;
+}
+
+languages-page .languages-child {
+  margin-bottom: 56px;
+  position: relative;
+  min-height: 80%;
+}
+
+languages-page .languages-container {
+  padding: 15px;
+  background-color: #14baa6;
+  height: calc(100vh - 62px);
+  overflow-y: auto;
+}
+
+languages-page .languages-child-container {
+  padding: 5px;
+  background-color: white !important;
+  position: relative;
+  min-height: 90%;
+}
+
+languages-page .custom-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -18%;
+}
+
+languages-page .custom-select-btn-attachment {
+  padding-right: 10px !important;
+}
+
+qualities-page .qualities-parent {
+  height: calc(100% - 170px);
+  overflow-y: auto;
+}
+
+qualities-page .qualities-child {
+  margin-bottom: 56px;
+  position: relative;
+  padding-bottom: 50px;
+  min-height: 80%;
+}
+
+qualities-page .qualities-container {
+  padding: 15px;
+  background-color: #14baa6;
+  height: calc(100vh - 62px);
+  overflow-y: auto;
+}
+
+qualities-page .qualities-child-container {
+  padding: 5px 5px 50px 5px;
+  background-color: white !important;
+  margin-bottom: 56px;
+  position: relative;
+  min-height: 90%;
+}
+
+qualities-page .custom-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -18%;
+}
+
+qualities-page .custom-select-btn-attachment {
+  padding-right: 10px !important;
+}
+
+page-details ion-header {
+  background-color: #00c1a9 !important;
+}
+
+page-details ion-content {
+  background-color: #00c1a9 !important;
+}
+
+find-job-page .voj-content {
+  overflow-y: auto;
+}
+
+find-job-page .voj-content .voj-form-container {
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  margin: 40px;
+}
+
+page-home voj-map #map {
+  height: 400px;
+  width: calc(100% - 20px);
+  margin: 0 10px;
+}
+
+information-resume-page .information-resume-parent {
+  height: calc(100% - 170px);
+  overflow-y: auto;
+}
+
+information-resume-page .information-resume-child {
+  margin-bottom: 56px;
+  position: relative;
+  min-height: 80%;
+}
+
+information-resume-page .information-resume-container {
+  padding: 15px;
+  background-color: #14baa6;
+  height: calc(100vh - 62px);
+  overflow-y: auto;
+}
+
+information-resume-page .information-resume-child-container {
+  background-color: white !important;
+  position: relative;
+  min-height: 90%;
+}
+
+information-resume-page .information-resume-list .item-inner {
+  border-bottom: none !important;
+}
+
+information-resume-page .information-resume-list .information-resume-edit-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #14baa6;
+}
+
+information-resume-page .information-resume-list .information-resume-edit-btn:hover {
+  background-color: #14baa6;
+}
+
+information-resume-page .information-resume-list .information-resume-label {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+page-options .options-container {
+  padding: 15px;
+  background-color: #14baa6;
+  height: 100%;
+}
+
+page-options .options-child-container {
+  background-color: white !important;
+}
+
+page-search .search-page-content {
+  background-color: #00c1a9;
+}
+
+page-search .search-page-content .scroll-content {
+  padding: 0px !important;
+}
+
+page-search ion-segment-button {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+page-about ion-header {
+  background-color: #00c1a9 !important;
+}
+
+page-about ion-content {
+  background-color: #00c1a9 !important;
+}
+
+page-about voj-map #map {
+  position: inherit !important;
 }

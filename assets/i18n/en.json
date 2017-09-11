@@ -8,25 +8,26 @@
     "COUNTRY_CODE": "Country code",
     "EMAIL": "Email",
     "PASSWORD": "Password",
-    "PASSWORD_CONFIRMATION": "Password confirmation"
+    "PASSWORD_CONFIRMATION": "Password confirmation",
+    "CANCEL_BTN": "Cancel"
   },
 
   "VALIDATION": {
     "PHONE_VALIDATION_MSG": "Please enter a 10-digit phone number starting with 06 or 07",
     "EMAIL_VALIDATION_MSG": "Please enter a valid e-mail address",
-    "PASSWORD_VALIDATION_MSG": "Please enter a password with a minimum of 6 characters",
+    "PASSWORD_VALIDATION_MSG": "Please enter at least 6 characters",
     "PASSWORD_CONFIRMATION_MSG": "Please enter an identical password"
   },
 
   "PLACEHOLDER": {
     "ENTER_PHONE": "Enter mobile phone",
     "ENTER_MAIL": "Enter email",
-    "ENTER_PASSWORD": "Entrez votre mot de passe",
-    "RE_ENTER_PASSWORD": "Entrez votre mot de passe une nouvelle fois"
+    "ENTER_PASSWORD": "Enter your password",
+    "RE_ENTER_PASSWORD": "Re-enter you password"
   },
 
   "USER_INFORMATION": {
-    "TITLE_EMPLOYER": "My enterprise information",
+    "TITLE_EMPLOYER": "My enterprise",
     "TITLE_JOBYER": "My information"
   },
 
@@ -66,10 +67,10 @@
     "NAME_ERR": "Name error",
     "FIRST_NAME": "First name",
     "FIRST_NAME_ERR": "First name error",
-    "COMPANY_NUMBER": "Siret",
-    "COMPANY_NUMBER_ERR": "Siret error",
-    "NAF": "Naf",
-    "NAF_ERR": "Naf error",
+    "COMPANY_NUMBER": "SIRET",
+    "COMPANY_NUMBER_ERR": "SIRET error",
+    "NAF": "NAF",
+    "NAF_ERR": "NAF error",
     "VALIDATE_BTN": "Validate",
     "MRS": "Mrs",
     "MR": "Mr"

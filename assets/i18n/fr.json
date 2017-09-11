@@ -8,25 +8,26 @@
     "COUNTRY_CODE": "Indicatif",
     "EMAIL": "Adresse mail",
     "PASSWORD": "Mot de passe",
-    "PASSWORD_CONFIRMATION": "Confirmation du mot de passe"
+    "PASSWORD_CONFIRMATION": "Confirmation du mot de passe",
+    "CANCEL_BTN": "Annuler"
   },
 
   "VALIDATION": {
-    "PHONE_VALIDATION_MSG": "Entrez un numéro de téléphone à 10 chiffres à partir de 06 ou 07",
-    "EMAIL_VALIDATION_MSG": "S'il vous plaît, mettez une adresse email valide",
-    "PASSWORD_VALIDATION_MSG": "Entrez un mot de passe avec un minimum de 6 caractères",
-    "PASSWORD_CONFIRMATION_MSG": "Entrez un mot de passe identique"
+    "PHONE_VALIDATION_MSG": "Veuillez saisir un numéro de téléphone à 10 chiffres commençant par 06 ou 07",
+    "EMAIL_VALIDATION_MSG": "Saisissez une adresse mail valide",
+    "PASSWORD_VALIDATION_MSG": "Veuillez saisir au minimum 6 caractères",
+    "PASSWORD_CONFIRMATION_MSG": "Les mots de passe doivent être identiques"
   },
 
   "PLACEHOLDER": {
-    "ENTER_PHONE": "Entrez le téléphone portable",
-    "ENTER_MAIL": "Entrez un email",
-    "ENTER_PASSWORD": "Entrez votre mot de passe",
-    "RE_ENTER_PASSWORD": "Entrez votre mot de passe une nouvelle fois"
+    "ENTER_PHONE": "Numéro de téléphone",
+    "ENTER_MAIL": "Adresse mail",
+    "ENTER_PASSWORD": "Mot de passe",
+    "RE_ENTER_PASSWORD": "Confirmation du mot de passe"
   },
 
   "USER_INFORMATION": {
-    "TITLE_EMPLOYER": "Mes informations d'entreprise",
+    "TITLE_EMPLOYER": "Mon entreprise",
     "TITLE_JOBYER": "Mes informations"
   },
 
@@ -40,16 +41,16 @@
 
   "SIGNUP": {
     "TITLE": "Inscription",
-    "REGISTERED": "Vous avez un compte?",
+    "REGISTERED": "Vous avez déjà un compte?",
     "VALIDATE": "S'inscrire",
     "LOGIN": "Se connecter"
   },
 
   "RESET_PASSWORD": {
-    "MESSAGE": "Votre mot de passe est sur le point d'être réinitialisé. Comment aimeriez-vous le recevoir?",
+    "MESSAGE": "Votre mot de passe est sur le point d'être réinitialisé. Comment souhaitez-vous le recevoir?",
     "SMS_BTN": "Par sms",
     "MAIL_BTN": "Par mail",
-    "CONFIRMATION_MESSAGE": "Votre mot de passe a été réinitialisé. Dans quelques minutes, vous recevrez par sms / mail un mot de passe temporaire.",
+    "CONFIRMATION_MESSAGE": "Votre mot de passe a bien été réinitialisé. Dans quelques minutes, vous recevrez par sms / mail un mot de passe temporaire.",
     "CONNECT_BTN": "Se connecter",
     "SEND_AGAIN_BTN": "Je n'ai reçu aucun code, envoyez-le à nouveau",
     "VALIDATE_BTN": "Valider",
