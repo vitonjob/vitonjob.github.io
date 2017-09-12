@@ -7467,7 +7467,7 @@ var VojMap = (function () {
         var marker = new google.maps.Marker({
             position: { lat: card.address.lat, lng: card.address.lng },
             map: this.map,
-            icon: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png',
+            icon: '../../assets/img/marker.png',
             title: card.address.title
         });
         var infoWindow = new google.maps.InfoWindow({
