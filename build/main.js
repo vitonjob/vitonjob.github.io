@@ -12028,7 +12028,7 @@ var IdentityPage = (function () {
                     type: 'text',
                     value: "",
                     label: 'Nom de jeune fille',
-                    required: !this.isInscription,
+                    required: false,
                     readonly: false,
                     visible: true,
                     min: 0,
