@@ -26197,6 +26197,10 @@ voj-form .download-uploaded-item-btn ion-icon:before {
   font-size: x-large;
 }
 
+voj-form .asterisk {
+  color: red;
+}
+
 voj-header .generic {
   height: 180px;
 }
@@ -26344,14 +26348,15 @@ voj-map #map {
 }
 
 .voj-notification-modal .modal-wrapper {
-  height: 200px;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   min-height: 200px;
   width: 300px;
-  min-width: 300px;
-  position: absolute;
-  left: calc(50% - (300px / 2));
-  top: calc(50% - (200px / 2));
-  border-radius: 2px;
 }
 
 voj-notification {
@@ -26363,13 +26368,11 @@ voj-notification {
 voj-notification h1.voj-notification-title {
   margin: 0 0 13px 0;
   font-size: 24px;
-  height: 30px;
-  overflow: hidden;
 }
 
 voj-notification .voj-notification-message {
   overflow-y: auto;
-  height: calc(100% - 50px);
+  min-height: 50px;
   margin-top: 5px;
 }
 
@@ -27460,6 +27463,10 @@ qualities-page .custom-select-btn-attachment {
   padding-right: 10px !important;
 }
 
+page-details {
+  height: 90% !important;
+}
+
 page-details ion-header {
   background-color: #00c1a9 !important;
 }
@@ -27538,6 +27545,10 @@ page-options .options-child-container {
   background-color: white !important;
 }
 
+page-search {
+  height: 90% !important;
+}
+
 page-search .search-page-content {
   background-color: #00c1a9;
 }
@@ -27549,6 +27560,10 @@ page-search .search-page-content .scroll-content {
 page-search ion-segment-button {
   color: #ffffff !important;
   border-color: #ffffff !important;
+}
+
+page-search .search-warning-message {
+  color: #ffffff;
 }
 
 page-about ion-header {
