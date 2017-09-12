@@ -1530,14 +1530,13 @@ var AboutPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_modal_service__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sign_up_sign_up__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_voj_notification_voj_notification_service__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__scripts_md5__ = __webpack_require__(414);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_masterdata_service_masterdata_service__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__reset_password_reset_password__ = __webpack_require__(415);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__config_voj_configuration__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_navigation_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__search_module_search_search__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_voj_events_voj_events__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scripts_md5__ = __webpack_require__(414);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_masterdata_service_masterdata_service__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__reset_password_reset_password__ = __webpack_require__(415);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__config_voj_configuration__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_navigation_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__search_module_search_search__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_voj_events_voj_events__ = __webpack_require__(41);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1560,16 +1559,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 var LoginPage = (function () {
-    function LoginPage(accountService, eventBus, storage, modalService, viewCtrl, vojNotification, masterdataService, configuration, navigationService) {
+    function LoginPage(accountService, eventBus, storage, modalService, viewCtrl, alertCtrl, masterdataService, configuration, navigationService) {
         var _this = this;
         this.accountService = accountService;
         this.eventBus = eventBus;
         this.storage = storage;
         this.modalService = modalService;
         this.viewCtrl = viewCtrl;
-        this.vojNotification = vojNotification;
+        this.alertCtrl = alertCtrl;
         this.masterdataService = masterdataService;
         this.configuration = configuration;
         this.navigationService = navigationService;
@@ -1675,7 +1673,7 @@ var LoginPage = (function () {
         //prepare credentials data
         var code = this.formData.fields.filter(function (f) { return f.name === "code"; })[0].value;
         var phone = this.formData.fields.filter(function (f) { return f.name === "phone"; })[0].value;
-        var password = Object(__WEBPACK_IMPORTED_MODULE_7__scripts_md5__["a" /* md5 */])(this.formData.fields.filter(function (f) { return f.name === "password"; })[0].value);
+        var password = Object(__WEBPACK_IMPORTED_MODULE_6__scripts_md5__["a" /* md5 */])(this.formData.fields.filter(function (f) { return f.name === "password"; })[0].value);
         var phoneWithCode = "+" + code + phone.substr(phone.length - 9);
         //call web service method
         this.accountService.authenticate(phoneWithCode, password).then(function (data) {
@@ -1696,7 +1694,7 @@ var LoginPage = (function () {
                         _this.viewCtrl.dismiss();
                     }
                     else {
-                        var vojPage = { page: __WEBPACK_IMPORTED_MODULE_12__search_module_search_search__["a" /* SearchPage */], isRoot: true };
+                        var vojPage = { page: __WEBPACK_IMPORTED_MODULE_11__search_module_search_search__["a" /* SearchPage */], isRoot: true };
                         _this.navigationService.navigate("list", vojPage);
                     }
                     _this.eventBus.publishAppEventUpdate();
@@ -1706,7 +1704,7 @@ var LoginPage = (function () {
     };
     LoginPage.prototype.gotoPasswordForgotten = function () {
         this.navigationService.dismiss(this.viewCtrl);
-        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_9__reset_password_reset_password__["a" /* ResetPasswordPage */] }, true);
+        this.modalService.present({ page: __WEBPACK_IMPORTED_MODULE_8__reset_password_reset_password__["a" /* ResetPasswordPage */] }, true);
     };
     LoginPage.prototype.goToSignup = function () {
         if (this.config.isLargeScreen) {
@@ -1716,39 +1714,21 @@ var LoginPage = (function () {
         this.navigationService.navigate("list", vojPage);
     };
     LoginPage.prototype.displayErrorNotification = function (msg) {
-        var notificationData = {
-            icon: 'star',
-            title: 'Warning',
-            message: msg,
-            backdropDismiss: true,
-            buttons: [
-                {
-                    id: 'cancel',
-                    label: 'OK',
-                    icon: 'alert',
-                    action: function () {
-                        console.log('Cancel clicked');
-                    }
-                }
-            ]
-        };
-        this.vojNotification.present(notificationData);
+        var alert = this.alertCtrl.create({
+            title: 'Attention!',
+            subTitle: msg,
+            buttons: ['OK']
+        });
+        alert.present();
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'login-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\login\login.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n\n\n<div class="voj-content">\n\n  <div class="voj-form-container">\n\n    <voj-form [data]=\'formData\'></voj-form>\n\n\n\n    <!-- Create an account -->\n\n    <h2 class="voj-not-registered-title">{{ \'LOGIN.NOT_REGISTERED\' | translate }}</h2>\n\n    <button ion-button class="custom-btn" (click)="goToSignup()">\n\n      {{ \'LOGIN.CREATE_ACCOUNT\' | translate }}\n\n    </button>\n\n  </div>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\login\login.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__["a" /* AccountService */],
-            __WEBPACK_IMPORTED_MODULE_13__providers_voj_events_voj_events__["a" /* EventBusProvider */],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */],
-            __WEBPACK_IMPORTED_MODULE_3__services_modal_service__["a" /* ModalService */],
-            __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["s" /* ViewController */],
-            __WEBPACK_IMPORTED_MODULE_6__components_voj_notification_voj_notification_service__["a" /* VojNotificationService */],
-            __WEBPACK_IMPORTED_MODULE_8__providers_masterdata_service_masterdata_service__["a" /* MasterdataService */],
-            __WEBPACK_IMPORTED_MODULE_10__config_voj_configuration__["a" /* Configuration */],
-            __WEBPACK_IMPORTED_MODULE_11__services_navigation_service__["a" /* NavigationService */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__["a" /* AccountService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__["a" /* AccountService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_12__providers_voj_events_voj_events__["a" /* EventBusProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_12__providers_voj_events_voj_events__["a" /* EventBusProvider */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__services_modal_service__["a" /* ModalService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_modal_service__["a" /* ModalService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["s" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["s" /* ViewController */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["b" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["b" /* AlertController */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_7__providers_masterdata_service_masterdata_service__["a" /* MasterdataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__providers_masterdata_service_masterdata_service__["a" /* MasterdataService */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_9__config_voj_configuration__["a" /* Configuration */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_9__config_voj_configuration__["a" /* Configuration */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_10__services_navigation_service__["a" /* NavigationService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_10__services_navigation_service__["a" /* NavigationService */]) === "function" && _j || Object])
     ], LoginPage);
     return LoginPage;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j;
 }());
 
 //# sourceMappingURL=login.js.map
@@ -7649,8 +7629,8 @@ var SearchResultDTO = (function () {
         result.id = this.id;
         result.title = new __WEBPACK_IMPORTED_MODULE_1__models_text_type__["a" /* TextType */]();
         result.title.label = this.name;
-        result.thumbnail = "http://dev.vitonjob.com/resources/jobyer_avatar.png";
-        result.cover = this.dataSource.cover ? this.dataSource.cover : "http://dev.vitonjob.com/resources/726.jpg";
+        result.thumbnail = "https://dev.vitonjob.com/resources/jobyer_avatar.png";
+        result.cover = this.dataSource.cover ? this.dataSource.cover : "https://dev.vitonjob.com/resources/726.jpg";
         result.subtitles = [
             {
                 icon: '',
@@ -7698,8 +7678,8 @@ var SearchResultDTO = (function () {
         result.id = this.id;
         result.title = new __WEBPACK_IMPORTED_MODULE_1__models_text_type__["a" /* TextType */]();
         result.title.label = this.name;
-        result.thumbnail = "http://dev.vitonjob.com/resources/jobyer_avatar.png";
-        result.cover = this.dataSource.cover ? this.dataSource.cover : "http://dev.vitonjob.com/resources/726.jpg";
+        result.thumbnail = "https://dev.vitonjob.com/resources/jobyer_avatar.png";
+        result.cover = this.dataSource.cover ? this.dataSource.cover : "https://dev.vitonjob.com/resources/726.jpg";
         result.subtitles = [
             {
                 icon: '',
