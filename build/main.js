@@ -620,7 +620,7 @@ var BankSettingsPage = (function () {
         var notificationData = {
             icon: '',
             title: 'Vit-On-Job',
-            message: "Félicitation! Vos données ont été bien enregistrées.",
+            message: "Félicitation! Votre compte a bien été créé.",
             backdropDismiss: true,
             buttons: [
                 {
@@ -7467,7 +7467,7 @@ var VojMap = (function () {
         var marker = new google.maps.Marker({
             position: { lat: card.address.lat, lng: card.address.lng },
             map: this.map,
-            icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png',
+            icon: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png',
             title: card.address.title
         });
         var infoWindow = new google.maps.InfoWindow({
