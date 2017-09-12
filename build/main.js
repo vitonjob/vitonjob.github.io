@@ -10,7 +10,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_card__ = __webpack_require__(654);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_menu_voj_menu_module__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__voj_segment_voj_segment_module__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__voj_segment_voj_segment_module__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__voj_map_voj_map_module__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__voj_page_header_voj_page_header_module__ = __webpack_require__(192);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -141,7 +141,7 @@ var LandingPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_masterdata_service_masterdata_service__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bank_settings_bank_settings__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_profile_service_profile_service__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_profile_service_profile_service__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_storage__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_utils__ = __webpack_require__(51);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -477,8 +477,8 @@ var PersonalDetailsIdentityPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_profile_service_profile_service__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_voj_notification_voj_notification_service__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_profile_service_profile_service__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_voj_notification_voj_notification_service__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_utils__ = __webpack_require__(51);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -664,7 +664,7 @@ var BankSettingsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_masterdata_service_masterdata_service__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__personal_details_identity_personal_details_identity__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_profile_service_profile_service__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_profile_service_profile_service__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_voj_configuration__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_navigation_service__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_storage__ = __webpack_require__(25);
@@ -1725,10 +1725,17 @@ var LoginPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'login-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\account-module\login\login.html"*/'<voj-page-header [data]="dataPageHeader"></voj-page-header>\n\n\n\n<div class="voj-content">\n\n  <div class="voj-form-container">\n\n    <voj-form [data]=\'formData\'></voj-form>\n\n\n\n    <!-- Create an account -->\n\n    <h2 class="voj-not-registered-title">{{ \'LOGIN.NOT_REGISTERED\' | translate }}</h2>\n\n    <button ion-button class="custom-btn" (click)="goToSignup()">\n\n      {{ \'LOGIN.CREATE_ACCOUNT\' | translate }}\n\n    </button>\n\n  </div>\n\n</div>\n\n'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\account-module\login\login.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__["a" /* AccountService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__["a" /* AccountService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_12__providers_voj_events_voj_events__["a" /* EventBusProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_12__providers_voj_events_voj_events__["a" /* EventBusProvider */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__services_modal_service__["a" /* ModalService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_modal_service__["a" /* ModalService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["s" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["s" /* ViewController */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["b" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["b" /* AlertController */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_7__providers_masterdata_service_masterdata_service__["a" /* MasterdataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__providers_masterdata_service_masterdata_service__["a" /* MasterdataService */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_9__config_voj_configuration__["a" /* Configuration */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_9__config_voj_configuration__["a" /* Configuration */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_10__services_navigation_service__["a" /* NavigationService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_10__services_navigation_service__["a" /* NavigationService */]) === "function" && _j || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__["a" /* AccountService */],
+            __WEBPACK_IMPORTED_MODULE_12__providers_voj_events_voj_events__["a" /* EventBusProvider */],
+            __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_3__services_modal_service__["a" /* ModalService */],
+            __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["s" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["b" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_7__providers_masterdata_service_masterdata_service__["a" /* MasterdataService */],
+            __WEBPACK_IMPORTED_MODULE_9__config_voj_configuration__["a" /* Configuration */],
+            __WEBPACK_IMPORTED_MODULE_10__services_navigation_service__["a" /* NavigationService */]])
     ], LoginPage);
     return LoginPage;
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j;
 }());
 
 //# sourceMappingURL=login.js.map
@@ -1929,11 +1936,11 @@ var VojConfiguration = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DetailsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_card_model__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_card_model__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_voj_events_voj_events__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_navigation_service__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_voj_page_header_model__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_search_service_search_service__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_search_service_search_service__ = __webpack_require__(74);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2067,7 +2074,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_search_header__ = __webpack_require__(691);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_segment_voj_segment_module__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_segment_voj_segment_module__ = __webpack_require__(73);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2369,9 +2376,9 @@ var ContactPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_card_model__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_card_model__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_voj_map_model__ = __webpack_require__(386);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_notification_voj_notification_service__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_voj_notification_voj_notification_service__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_text_type__ = __webpack_require__(385);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_http_request_http_request__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__test_components_contact_contact__ = __webpack_require__(199);
@@ -2840,7 +2847,7 @@ var HomePage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_profile_service_profile_service__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_profile_service_profile_service__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_utils__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_navigation_service__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__user_information_user_information__ = __webpack_require__(78);
@@ -3393,7 +3400,7 @@ var map = {
 		197
 	],
 	"../components/voj-segment/voj-segment.module": [
-		74
+		73
 	],
 	"../pages/account-module/company/company.module": [
 		410
@@ -3974,7 +3981,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_header_web__ = __webpack_require__(694);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_segment_voj_segment_module__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__voj_segment_voj_segment_module__ = __webpack_require__(73);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5396,7 +5403,7 @@ var md5 = function (string) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResetPasswordPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_account_service_account_service__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_voj_notification_voj_notification_service__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_voj_notification_voj_notification_service__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_masterdata_service_masterdata_service__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(1);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -6231,11 +6238,11 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_pages_module__ = __webpack_require__(725);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angular_calendar__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_voj_notification_voj_notification__ = __webpack_require__(399);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_voj_notification_voj_notification_service__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_voj_notification_voj_notification_service__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_http_request_http_request__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_http__ = __webpack_require__(185);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__config_voj_configuration__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_search_service_search_service__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_search_service_search_service__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_navigation_service__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ngx_translate_core__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ngx_translate_http_loader__ = __webpack_require__(751);
@@ -6247,7 +6254,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_account_service_account_service__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_geolocation__ = __webpack_require__(189);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__providers_masterdata_service_masterdata_service__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_profile_service_profile_service__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_profile_service_profile_service__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_account_module_user_information_strategy_context__ = __webpack_require__(404);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__dtos_dto_strategy_search_search_dto_factory__ = __webpack_require__(387);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -7034,53 +7041,6 @@ var MasterdataService = (function () {
 
 /***/ }),
 
-/***/ 58:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojNotificationService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_notification__ = __webpack_require__(399);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var VojNotificationService = (function () {
-    function VojNotificationService(modalCtrl) {
-        this.modalCtrl = modalCtrl;
-    }
-    // Present notification
-    VojNotificationService.prototype.present = function (notificationData) {
-        // Options for modal window
-        var modalOptions = {
-            cssClass: 'voj-notification-modal',
-            enableBackdropDismiss: notificationData.backdropDismiss
-        };
-        // Create modal window
-        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_2__voj_notification__["a" /* VojNotification */], { data: notificationData }, modalOptions);
-        // Show modal window
-        modal.present();
-    };
-    VojNotificationService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["B" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["k" /* ModalController */]])
-    ], VojNotificationService);
-    return VojNotificationService;
-}());
-
-//# sourceMappingURL=voj-notification.service.js.map
-
-/***/ }),
-
 /***/ 652:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -7201,7 +7161,7 @@ var DemoUtilsModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_menu_voj_menu__ = __webpack_require__(383);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_voj_card_model__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_voj_card_model__ = __webpack_require__(72);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7355,7 +7315,7 @@ var VojSegment = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_voj_events_voj_events__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_search_service_search_service__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_search_service_search_service__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_details_details__ = __webpack_require__(187);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_geolocation__ = __webpack_require__(189);
@@ -7447,7 +7407,7 @@ var VojMap = (function () {
         var marker = new google.maps.Marker({
             position: { lat: card.address.lat, lng: card.address.lng },
             map: this.map,
-            icon: '../../assets/img/marker.png',
+            icon: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png',
             title: card.address.title
         });
         var infoWindow = new google.maps.InfoWindow({
@@ -7548,7 +7508,7 @@ var VojMap = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Passenger; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__voj_card_model__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__voj_card_model__ = __webpack_require__(72);
 
 var Passenger = (function () {
     function Passenger() {
@@ -7597,7 +7557,7 @@ var VojTuple = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchResultDTO; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_voj_card_model__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_voj_card_model__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_text_type__ = __webpack_require__(385);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_map_model__ = __webpack_require__(386);
 
@@ -8835,6 +8795,21 @@ var OptionsPage = (function () {
 
 /***/ }),
 
+/***/ 72:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojCardModel; });
+var VojCardModel = (function () {
+    function VojCardModel() {
+    }
+    return VojCardModel;
+}());
+
+//# sourceMappingURL=voj-card.model.js.map
+
+/***/ }),
+
 /***/ 722:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8860,7 +8835,7 @@ var OptionsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_account_module_account_account__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_account_module_user_information_user_information__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_account_module_identity_identity__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_search_service_search_service__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_search_service_search_service__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__startegy_jobyer__ = __webpack_require__(723);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__startegy_employer__ = __webpack_require__(724);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -9833,14 +9808,40 @@ var AccountPageModule = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojCardModel; });
-var VojCardModel = (function () {
-    function VojCardModel() {
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojSegmentModule", function() { return VojSegmentModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_segment__ = __webpack_require__(655);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var VojSegmentModule = (function () {
+    function VojSegmentModule() {
     }
-    return VojCardModel;
+    VojSegmentModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__voj_segment__["a" /* VojSegment */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__voj_segment__["a" /* VojSegment */]),
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_2__voj_segment__["a" /* VojSegment */]
+            ]
+        })
+    ], VojSegmentModule);
+    return VojSegmentModule;
 }());
 
-//# sourceMappingURL=voj-card.model.js.map
+//# sourceMappingURL=voj-segment.module.js.map
 
 /***/ }),
 
@@ -10396,40 +10397,220 @@ var EnterpriseSearchPage = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VojSegmentModule", function() { return VojSegmentModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchServiceProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_segment__ = __webpack_require__(655);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__http_request_http_request__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dtos_search_result_dto__ = __webpack_require__(667);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__voj_events_voj_events__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_button_type_model__ = __webpack_require__(668);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dtos_dto_strategy_search_search_dto_factory__ = __webpack_require__(387);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
 
 
-var VojSegmentModule = (function () {
-    function VojSegmentModule() {
+
+
+
+
+
+var SearchServiceProvider = (function () {
+    function SearchServiceProvider(http, dtoFactory, eventBus, configuration) {
+        this.http = http;
+        this.dtoFactory = dtoFactory;
+        this.eventBus = eventBus;
+        this.configuration = configuration;
+        this.eventMode = false;
+        this.events = [];
+        this.eventsCards = [];
+        this.eventBus.subscribeSearchService(this);
     }
-    VojSegmentModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__voj_segment__["a" /* VojSegment */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__voj_segment__["a" /* VojSegment */]),
-            ],
-            exports: [
-                __WEBPACK_IMPORTED_MODULE_2__voj_segment__["a" /* VojSegment */]
-            ]
-        })
-    ], VojSegmentModule);
-    return VojSegmentModule;
+    SearchServiceProvider.prototype.markAsRead = function (card) {
+        var _this = this;
+        if (!this.eventMode)
+            return;
+        var id = card.id;
+        var idEvent = 0;
+        var index = -1;
+        for (var i = 0; i < this.events.length; i++) {
+            if (this.events[i].dataSource.result.id == id) {
+                idEvent = this.events[i].eventId;
+                index = i;
+                break;
+            }
+        }
+        if (idEvent == 0)
+            return;
+        if (card.badges && card.badges.length > 0)
+            for (var i = 0; i < card.badges.length; i++) {
+                if (card.badges[i].id == 'read-mark') {
+                    card.badges[i].icon = 'mail-open';
+                }
+            }
+        var payload = {
+            "service": "READ_PUSH",
+            "eventId": idEvent
+        };
+        var url = null;
+        for (var i = 0; i < this.configuration.configuration.urls.length; i++) {
+            var t = this.configuration.configuration.urls[i];
+            if (t.key == "search") {
+                url = t.value;
+                break;
+            }
+        }
+        return new Promise(function (resolve) {
+            _this.http.call(payload, url, "", true).subscribe(function (data) {
+                resolve(data);
+            });
+        });
+    };
+    /**
+     *
+     * @param accountId
+     * @returns {Promise<T>}
+     */
+    SearchServiceProvider.prototype.checkEvents = function (accountId) {
+        var _this = this;
+        this.eventMode = true;
+        var payload = {
+            "service": "CHECK",
+            "accountId": accountId
+        };
+        var url = "https://hermes.vitonjob.com/search/";
+        try {
+            for (var i = 0; i < this.configuration.configuration.urls.length; i++) {
+                var t = this.configuration.configuration.urls[i];
+                if (t.key == "search") {
+                    url = t.value;
+                    break;
+                }
+            }
+        }
+        catch (exception) {
+            console.log("notification occured before initlaizing configuration");
+        }
+        return new Promise(function (resolve) {
+            _this.http.call(payload, url, "", true).subscribe(function (data) {
+                _this.results = [];
+                _this.events = [];
+                _this.eventsCards = [];
+                var cards = [];
+                for (var i = 0; i < data.length; i++) {
+                    var r = null;
+                    if (_this.configuration.configuration.customer == "J")
+                        r = new __WEBPACK_IMPORTED_MODULE_4__dtos_search_result_dto__["a" /* SearchResultDTO */](data[i].subject.annonce, _this.dtoFactory);
+                    else
+                        r = new __WEBPACK_IMPORTED_MODULE_4__dtos_search_result_dto__["a" /* SearchResultDTO */](data[i].subject.jobyer, _this.dtoFactory);
+                    r.eventId = data[i].id_event;
+                    r.read = data[i].read;
+                    r.badges = [];
+                    var b = new __WEBPACK_IMPORTED_MODULE_6__models_button_type_model__["a" /* ButtonType */]();
+                    b.icon = data[i].read ? 'mail-open' : 'mail';
+                    r.badges.push(b);
+                    b.id = 'read-mark';
+                    var c = r.toVojCard();
+                    cards.push(c);
+                    _this.events.push(r);
+                }
+                _this.eventsCards = cards;
+                resolve(cards);
+            });
+        });
+    };
+    /**
+     * Seek offers/jobyers based on composit query
+     * @param SearchQuery object
+     * @returns {Promise<T>}
+     */
+    SearchServiceProvider.prototype.criteriaSearch = function (query) {
+        var _this = this;
+        this.eventMode = false;
+        var payload = {
+            "service": "CRITERIA",
+            "role": this.configuration.configuration.customer == "J" ? "employer" : "jobyer",
+            "query": query
+        };
+        var url = "";
+        for (var i = 0; i < this.configuration.configuration.urls.length; i++) {
+            var t = this.configuration.configuration.urls[i];
+            if (t.key == "search") {
+                url = t.value;
+                break;
+            }
+        }
+        return new Promise(function (resolve) {
+            _this.http.call(payload, url, "", true).subscribe(function (data) {
+                _this.eventMode = false;
+                _this.results = [];
+                var cards = [];
+                for (var i = 0; i < data.length; i++) {
+                    var r = new __WEBPACK_IMPORTED_MODULE_4__dtos_search_result_dto__["a" /* SearchResultDTO */](data[i], _this.dtoFactory);
+                    var c = r.toVojCard();
+                    cards.push(c);
+                    _this.results.push(r);
+                }
+                resolve(cards);
+            });
+        });
+    };
+    /**
+     * Seek offers/jobyers based on natural language query
+     * @param fullText
+     * @returns {Promise<T>}
+     */
+    SearchServiceProvider.prototype.semanticSearch = function (fullText) {
+        var _this = this;
+        this.eventMode = false;
+        var payload = {
+            "service": "FULL_TEXT",
+            "role": this.configuration.configuration.customer == "J" ? "employer" : "jobyer",
+            "fullText": fullText
+        };
+        var url = "";
+        for (var i = 0; i < this.configuration.configuration.urls.length; i++) {
+            var t = this.configuration.configuration.urls[i];
+            if (t.key == "search") {
+                url = t.value;
+                break;
+            }
+        }
+        return new Promise(function (resolve) {
+            _this.http.call(payload, url, "", true).subscribe(function (data) {
+                _this.eventMode = false;
+                _this.results = [];
+                var cards = [];
+                for (var i = 0; i < data.length; i++) {
+                    var r = new __WEBPACK_IMPORTED_MODULE_4__dtos_search_result_dto__["a" /* SearchResultDTO */](data[i], _this.dtoFactory);
+                    var c = r.toVojCard();
+                    cards.push(c);
+                    _this.results.push(r);
+                }
+                resolve(cards);
+            });
+        });
+    };
+    SearchServiceProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__http_request_http_request__["a" /* HttpRequestProvider */],
+            __WEBPACK_IMPORTED_MODULE_7__dtos_dto_strategy_search_search_dto_factory__["a" /* SearchDTOFactory */],
+            __WEBPACK_IMPORTED_MODULE_5__voj_events_voj_events__["a" /* EventBusProvider */],
+            __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__["a" /* Configuration */]])
+    ], SearchServiceProvider);
+    return SearchServiceProvider;
 }());
 
-//# sourceMappingURL=voj-segment.module.js.map
+//# sourceMappingURL=search-service.js.map
 
 /***/ }),
 
@@ -10968,368 +11149,6 @@ var AvailabilitiesAddSlotPageModule = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__http_request_http_request__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dtos_search_result_dto__ = __webpack_require__(667);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__voj_events_voj_events__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_button_type_model__ = __webpack_require__(668);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dtos_dto_strategy_search_search_dto_factory__ = __webpack_require__(387);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-
-var SearchServiceProvider = (function () {
-    function SearchServiceProvider(http, dtoFactory, eventBus, configuration) {
-        this.http = http;
-        this.dtoFactory = dtoFactory;
-        this.eventBus = eventBus;
-        this.configuration = configuration;
-        this.eventMode = false;
-        this.events = [];
-        this.eventsCards = [];
-        this.eventBus.subscribeSearchService(this);
-    }
-    SearchServiceProvider.prototype.markAsRead = function (card) {
-        var _this = this;
-        if (!this.eventMode)
-            return;
-        var id = card.id;
-        var idEvent = 0;
-        var index = -1;
-        for (var i = 0; i < this.events.length; i++) {
-            if (this.events[i].dataSource.result.id == id) {
-                idEvent = this.events[i].eventId;
-                index = i;
-                break;
-            }
-        }
-        if (idEvent == 0)
-            return;
-        if (card.badges && card.badges.length > 0)
-            for (var i = 0; i < card.badges.length; i++) {
-                if (card.badges[i].id == 'read-mark') {
-                    card.badges[i].icon = 'mail-open';
-                }
-            }
-        var payload = {
-            "service": "READ_PUSH",
-            "eventId": idEvent
-        };
-        var url = null;
-        for (var i = 0; i < this.configuration.configuration.urls.length; i++) {
-            var t = this.configuration.configuration.urls[i];
-            if (t.key == "search") {
-                url = t.value;
-                break;
-            }
-        }
-        return new Promise(function (resolve) {
-            _this.http.call(payload, url, "", true).subscribe(function (data) {
-                resolve(data);
-            });
-        });
-    };
-    /**
-     *
-     * @param accountId
-     * @returns {Promise<T>}
-     */
-    SearchServiceProvider.prototype.checkEvents = function (accountId) {
-        var _this = this;
-        this.eventMode = true;
-        var payload = {
-            "service": "CHECK",
-            "accountId": accountId
-        };
-        var url = "https://hermes.vitonjob.com/search/";
-        try {
-            for (var i = 0; i < this.configuration.configuration.urls.length; i++) {
-                var t = this.configuration.configuration.urls[i];
-                if (t.key == "search") {
-                    url = t.value;
-                    break;
-                }
-            }
-        }
-        catch (exception) {
-            console.log("notification occured before initlaizing configuration");
-        }
-        return new Promise(function (resolve) {
-            _this.http.call(payload, url, "", true).subscribe(function (data) {
-                _this.results = [];
-                _this.events = [];
-                _this.eventsCards = [];
-                var cards = [];
-                for (var i = 0; i < data.length; i++) {
-                    var r = null;
-                    if (_this.configuration.configuration.customer == "J")
-                        r = new __WEBPACK_IMPORTED_MODULE_4__dtos_search_result_dto__["a" /* SearchResultDTO */](data[i].subject.annonce, _this.dtoFactory);
-                    else
-                        r = new __WEBPACK_IMPORTED_MODULE_4__dtos_search_result_dto__["a" /* SearchResultDTO */](data[i].subject.jobyer, _this.dtoFactory);
-                    r.eventId = data[i].id_event;
-                    r.read = data[i].read;
-                    r.badges = [];
-                    var b = new __WEBPACK_IMPORTED_MODULE_6__models_button_type_model__["a" /* ButtonType */]();
-                    b.icon = data[i].read ? 'mail-open' : 'mail';
-                    r.badges.push(b);
-                    b.id = 'read-mark';
-                    var c = r.toVojCard();
-                    cards.push(c);
-                    _this.events.push(r);
-                }
-                _this.eventsCards = cards;
-                resolve(cards);
-            });
-        });
-    };
-    /**
-     * Seek offers/jobyers based on composit query
-     * @param SearchQuery object
-     * @returns {Promise<T>}
-     */
-    SearchServiceProvider.prototype.criteriaSearch = function (query) {
-        var _this = this;
-        this.eventMode = false;
-        var payload = {
-            "service": "CRITERIA",
-            "role": this.configuration.configuration.customer == "J" ? "employer" : "jobyer",
-            "query": query
-        };
-        var url = "";
-        for (var i = 0; i < this.configuration.configuration.urls.length; i++) {
-            var t = this.configuration.configuration.urls[i];
-            if (t.key == "search") {
-                url = t.value;
-                break;
-            }
-        }
-        return new Promise(function (resolve) {
-            _this.http.call(payload, url, "", true).subscribe(function (data) {
-                _this.eventMode = false;
-                _this.results = [];
-                var cards = [];
-                for (var i = 0; i < data.length; i++) {
-                    var r = new __WEBPACK_IMPORTED_MODULE_4__dtos_search_result_dto__["a" /* SearchResultDTO */](data[i], _this.dtoFactory);
-                    var c = r.toVojCard();
-                    cards.push(c);
-                    _this.results.push(r);
-                }
-                resolve(cards);
-            });
-        });
-    };
-    /**
-     * Seek offers/jobyers based on natural language query
-     * @param fullText
-     * @returns {Promise<T>}
-     */
-    SearchServiceProvider.prototype.semanticSearch = function (fullText) {
-        var _this = this;
-        this.eventMode = false;
-        var payload = {
-            "service": "FULL_TEXT",
-            "role": this.configuration.configuration.customer == "J" ? "employer" : "jobyer",
-            "fullText": fullText
-        };
-        var url = "";
-        for (var i = 0; i < this.configuration.configuration.urls.length; i++) {
-            var t = this.configuration.configuration.urls[i];
-            if (t.key == "search") {
-                url = t.value;
-                break;
-            }
-        }
-        return new Promise(function (resolve) {
-            _this.http.call(payload, url, "", true).subscribe(function (data) {
-                _this.eventMode = false;
-                _this.results = [];
-                var cards = [];
-                for (var i = 0; i < data.length; i++) {
-                    var r = new __WEBPACK_IMPORTED_MODULE_4__dtos_search_result_dto__["a" /* SearchResultDTO */](data[i], _this.dtoFactory);
-                    var c = r.toVojCard();
-                    cards.push(c);
-                    _this.results.push(r);
-                }
-                resolve(cards);
-            });
-        });
-    };
-    SearchServiceProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__http_request_http_request__["a" /* HttpRequestProvider */],
-            __WEBPACK_IMPORTED_MODULE_7__dtos_dto_strategy_search_search_dto_factory__["a" /* SearchDTOFactory */],
-            __WEBPACK_IMPORTED_MODULE_5__voj_events_voj_events__["a" /* EventBusProvider */],
-            __WEBPACK_IMPORTED_MODULE_3__config_voj_configuration__["a" /* Configuration */]])
-    ], SearchServiceProvider);
-    return SearchServiceProvider;
-}());
-
-//# sourceMappingURL=search-service.js.map
-
-/***/ }),
-
-/***/ 750:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AvailabilitiesAddSlotPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_navigation_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cv_offer_module_availabilities_availabilities__ = __webpack_require__(203);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var AvailabilitiesAddSlotPage = (function () {
-    function AvailabilitiesAddSlotPage(configurationService, navigationService) {
-        this.configurationService = configurationService;
-        this.navigationService = navigationService;
-        this.isMobile = false;
-        this.config = this.configurationService.configuration;
-        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
-        this.headerData = {
-            title: 'Add an availability',
-            style: 'any',
-            actions: [{
-                    id: 'xdcfggjhbj',
-                    label: 'help',
-                    icon: 'help',
-                    action: function () {
-                        console.log('button works');
-                    }
-                }],
-            isCanceled: true
-        };
-        this.formData = {
-            fields: [
-                {
-                    required: true,
-                    type: 'text',
-                    label: 'Available from',
-                    value: '',
-                    placeholder: '05/24/1990',
-                    readonly: false,
-                    visible: true,
-                    id: '',
-                    regex: '(?:0?2[/.-](?:[12][0-9]|0?[1-9])|(?:0?[469]|11)' +
-                        '[/.-](?:30|[12][0-9]|0?[1-9])|(?:0?[13578]|1[02])[/.-](?:3[01]|[12][0-9]|0?[1-9]))[/.-][0-9]{4}',
-                    name: 'Date from',
-                },
-                {
-                    required: true,
-                    type: 'text',
-                    value: '',
-                    label: 'Au',
-                    placeholder: '05/24/1990',
-                    readonly: false,
-                    visible: true,
-                    id: '',
-                    regex: '(?:0?2[/.-](?:[12][0-9]|0?[1-9])|(?:0?[469]|11)' +
-                        '[/.-](?:30|[12][0-9]|0?[1-9])|(?:0?[13578]|1[02])[/.-](?:3[01]|[12][0-9]|0?[1-9]))[/.-][0-9]{4}',
-                    name: 'Date to',
-                },
-                {
-                    value: 'wholeDay',
-                    type: 'radioWithInputs',
-                    label: 'Radio label',
-                    dataset3: [
-                        {
-                            id: 1,
-                            key: 'Whole day',
-                            value: 'wholeDay'
-                        },
-                        {
-                            id: 2,
-                            key: '',
-                            value: 'rangeHours',
-                            subdata: {
-                                key1: 'From',
-                                placeholder1: '10:45',
-                                value1: '',
-                                name1: 'from hours',
-                                key2: 'To',
-                                value2: '',
-                                name2: 'to hours',
-                                placeholder2: '11:15',
-                            }
-                        }
-                    ],
-                    visible: true,
-                    required: true,
-                    regex: '([01]\\d|2[0-3]):([0-5]\\d)',
-                    name: 'EntireDay',
-                    id: '',
-                },
-            ],
-            submit: {
-                id: 'xdcfgvyhubijnkfwlbhvg',
-                label: 'Validate',
-                icon: 'build',
-                action: function () {
-                    this.validateDateFunc();
-                }.bind(this)
-            }
-        };
-    }
-    AvailabilitiesAddSlotPage.prototype.validateDateFunc = function () {
-        if (new Date(this.formData.fields[0].value) < new Date() ||
-            new Date(this.formData.fields[1].value) < new Date(this.formData.fields[0].value)) {
-            console.log('You can not enter a date earlier than the current date and ' +
-                'also you can not enter second date earlier than the first date');
-        }
-        else {
-            var vojNav = { page: __WEBPACK_IMPORTED_MODULE_3__cv_offer_module_availabilities_availabilities__["a" /* AvailabilitiesPage */], isRoot: false };
-            this.navigationService.navigate('list', vojNav);
-        }
-    };
-    AvailabilitiesAddSlotPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad AvailabilitiesAddSlotPage');
-    };
-    AvailabilitiesAddSlotPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'availabilities-add-slot-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\availabilities-add-slot\availabilities-add-slot.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<div [ngClass]="isMobile ? \'availabilities-add-slot-container\' : \'\'" class="availabilities-add-slot-parent">\n\n    <div [ngClass]="isMobile ? \'availabilities-add-slot-child-container\' : \'\'" class="availabilities-add-slot-child">\n\n        <voj-form [data]=\'formData\'></voj-form>\n\n    </div>\n\n</div>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\availabilities-add-slot\availabilities-add-slot.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */],
-            __WEBPACK_IMPORTED_MODULE_2__services_navigation_service__["a" /* NavigationService */]])
-    ], AvailabilitiesAddSlotPage);
-    return AvailabilitiesAddSlotPage;
-}());
-
-//# sourceMappingURL=availabilities-add-slot.js.map
-
-/***/ }),
-
-/***/ 76:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfileService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(9);
@@ -11507,6 +11326,194 @@ var ProfileService = (function () {
 
 /***/ }),
 
+/***/ 750:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AvailabilitiesAddSlotPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_navigation_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cv_offer_module_availabilities_availabilities__ = __webpack_require__(203);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var AvailabilitiesAddSlotPage = (function () {
+    function AvailabilitiesAddSlotPage(configurationService, navigationService) {
+        this.configurationService = configurationService;
+        this.navigationService = navigationService;
+        this.isMobile = false;
+        this.config = this.configurationService.configuration;
+        this.config.isLargeScreen ? this.isMobile = false : this.isMobile = true;
+        this.headerData = {
+            title: 'Add an availability',
+            style: 'any',
+            actions: [{
+                    id: 'xdcfggjhbj',
+                    label: 'help',
+                    icon: 'help',
+                    action: function () {
+                        console.log('button works');
+                    }
+                }],
+            isCanceled: true
+        };
+        this.formData = {
+            fields: [
+                {
+                    required: true,
+                    type: 'text',
+                    label: 'Available from',
+                    value: '',
+                    placeholder: '05/24/1990',
+                    readonly: false,
+                    visible: true,
+                    id: '',
+                    regex: '(?:0?2[/.-](?:[12][0-9]|0?[1-9])|(?:0?[469]|11)' +
+                        '[/.-](?:30|[12][0-9]|0?[1-9])|(?:0?[13578]|1[02])[/.-](?:3[01]|[12][0-9]|0?[1-9]))[/.-][0-9]{4}',
+                    name: 'Date from',
+                },
+                {
+                    required: true,
+                    type: 'text',
+                    value: '',
+                    label: 'Au',
+                    placeholder: '05/24/1990',
+                    readonly: false,
+                    visible: true,
+                    id: '',
+                    regex: '(?:0?2[/.-](?:[12][0-9]|0?[1-9])|(?:0?[469]|11)' +
+                        '[/.-](?:30|[12][0-9]|0?[1-9])|(?:0?[13578]|1[02])[/.-](?:3[01]|[12][0-9]|0?[1-9]))[/.-][0-9]{4}',
+                    name: 'Date to',
+                },
+                {
+                    value: 'wholeDay',
+                    type: 'radioWithInputs',
+                    label: 'Radio label',
+                    dataset3: [
+                        {
+                            id: 1,
+                            key: 'Whole day',
+                            value: 'wholeDay'
+                        },
+                        {
+                            id: 2,
+                            key: '',
+                            value: 'rangeHours',
+                            subdata: {
+                                key1: 'From',
+                                placeholder1: '10:45',
+                                value1: '',
+                                name1: 'from hours',
+                                key2: 'To',
+                                value2: '',
+                                name2: 'to hours',
+                                placeholder2: '11:15',
+                            }
+                        }
+                    ],
+                    visible: true,
+                    required: true,
+                    regex: '([01]\\d|2[0-3]):([0-5]\\d)',
+                    name: 'EntireDay',
+                    id: '',
+                },
+            ],
+            submit: {
+                id: 'xdcfgvyhubijnkfwlbhvg',
+                label: 'Validate',
+                icon: 'build',
+                action: function () {
+                    this.validateDateFunc();
+                }.bind(this)
+            }
+        };
+    }
+    AvailabilitiesAddSlotPage.prototype.validateDateFunc = function () {
+        if (new Date(this.formData.fields[0].value) < new Date() ||
+            new Date(this.formData.fields[1].value) < new Date(this.formData.fields[0].value)) {
+            console.log('You can not enter a date earlier than the current date and ' +
+                'also you can not enter second date earlier than the first date');
+        }
+        else {
+            var vojNav = { page: __WEBPACK_IMPORTED_MODULE_3__cv_offer_module_availabilities_availabilities__["a" /* AvailabilitiesPage */], isRoot: false };
+            this.navigationService.navigate('list', vojNav);
+        }
+    };
+    AvailabilitiesAddSlotPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AvailabilitiesAddSlotPage');
+    };
+    AvailabilitiesAddSlotPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'availabilities-add-slot-page',template:/*ion-inline-start:"F:\Ionic\vitonjob-v2\src\pages\availabilities-add-slot\availabilities-add-slot.html"*/'<voj-page-header [data]=\'headerData\'></voj-page-header>\n\n<div [ngClass]="isMobile ? \'availabilities-add-slot-container\' : \'\'" class="availabilities-add-slot-parent">\n\n    <div [ngClass]="isMobile ? \'availabilities-add-slot-child-container\' : \'\'" class="availabilities-add-slot-child">\n\n        <voj-form [data]=\'formData\'></voj-form>\n\n    </div>\n\n</div>'/*ion-inline-end:"F:\Ionic\vitonjob-v2\src\pages\availabilities-add-slot\availabilities-add-slot.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__config_voj_configuration__["a" /* Configuration */],
+            __WEBPACK_IMPORTED_MODULE_2__services_navigation_service__["a" /* NavigationService */]])
+    ], AvailabilitiesAddSlotPage);
+    return AvailabilitiesAddSlotPage;
+}());
+
+//# sourceMappingURL=availabilities-add-slot.js.map
+
+/***/ }),
+
+/***/ 76:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VojNotificationService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__voj_notification__ = __webpack_require__(399);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var VojNotificationService = (function () {
+    function VojNotificationService(modalCtrl) {
+        this.modalCtrl = modalCtrl;
+    }
+    // Present notification
+    VojNotificationService.prototype.present = function (notificationData) {
+        // Options for modal window
+        var modalOptions = {
+            cssClass: 'voj-notification-modal',
+            enableBackdropDismiss: notificationData.backdropDismiss
+        };
+        // Create modal window
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_2__voj_notification__["a" /* VojNotification */], { data: notificationData }, modalOptions);
+        // Show modal window
+        modal.present();
+    };
+    VojNotificationService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["B" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["k" /* ModalController */]])
+    ], VojNotificationService);
+    return VojNotificationService;
+}());
+
+//# sourceMappingURL=voj-notification.service.js.map
+
+/***/ }),
+
 /***/ 77:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11515,7 +11522,7 @@ var ProfileService = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_voj_page_header_model__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_search_service_search_service__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_search_service_search_service__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_voj_events_voj_events__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_navigation_service__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__details_details__ = __webpack_require__(187);
@@ -11915,7 +11922,7 @@ var UserInformationPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__main_address_main_address__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_voj_notification_voj_notification_service__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_voj_notification_voj_notification_service__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_navigation_service__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_utils__ = __webpack_require__(51);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -12157,7 +12164,7 @@ var IdentityPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__voj_map_voj_map_module__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__voj_menu_voj_menu_module__ = __webpack_require__(184);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__voj_search_header_voj_search_header_module__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__voj_segment_voj_segment_module__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__voj_segment_voj_segment_module__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__voj_header_web_voj_header_web_module__ = __webpack_require__(395);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__voj_page_header_voj_page_header_module__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__voj_header_segment_voj_header_segment_module__ = __webpack_require__(396);
