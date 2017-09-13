@@ -1,5 +1,8 @@
 title: Vit-On-Job 
 description: Vit-On-Job, une technologie avancée au service d'emploi.
 show_downloads: true
-google_analytics:
+"hostname": "github.com",
+"pages_hostname": "github.io",
+"api_url": "https://api.github.com",
+"help_url": "https://help.github.com",
 theme: jekyll-theme-cayman
